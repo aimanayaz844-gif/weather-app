@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Lookup</title>
+<link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+  <div class="card">
+    <h1>Weather Lookup</h1>
+    <p class="lead">Enter a city to see current conditions.</p>
+
+    <form id="searchForm">
+      <input type="text" id="cityInput" placeholder="e.g. peshawar" autocomplete="off" />
+      <button type="submit" id="searchBtn">Search</button>
+    </form>
+
+    <p id="message"></p>
+
+    <div id="result">
+      <p class="place" id="placeName">—</p>
+      <p class="condition" id="condition">—</p>
+
+      <div class="temp-row">
+        <span class="temp-main" id="temp">—</span>
+        <span class="temp-feels" id="feelsLike">Feels like —</span>
+      </div>
+
+      <div class="stats">
+        <div>
+          <p class="stat-label">Pressure</p>
+          <p class="stat-value" id="pressure">—</p>
+        </div>
+        <div>
+          <p class="stat-label">Sea level</p>
+          <p class="stat-value" id="seaLevel">—</p>
+        </div>
+        <div>
+          <p class="stat-label">Humidity</p>
+          <p class="stat-value" id="humidity">—</p>
+        </div>
+        <div>
+          <p class="stat-label">Wind speed</p>
+          <p class="stat-value" id="windSpeed">—</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="weather.js"></script>
+</body>
+</html>
